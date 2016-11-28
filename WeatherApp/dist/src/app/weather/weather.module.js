@@ -1,4 +1,4 @@
-System.register(['@angular/core', '@angular/platform-browser', './app.routes', './app.component', './city-list/city-list.module', './weather/weather.module'], function(exports_1, context_1) {
+System.register(['@angular/core', '@angular/platform-browser', '@angular/router', '../shared/shared.module', './weather.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,8 +10,8 @@ System.register(['@angular/core', '@angular/platform-browser', './app.routes', '
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, platform_browser_1, app_routes_1, app_component_1, city_list_module_1, weather_module_1;
-    var AppModule;
+    var core_1, platform_browser_1, router_1, shared_module_1, weather_component_1;
+    var WeatherModule;
     return {
         setters:[
             function (core_1_1) {
@@ -20,34 +20,31 @@ System.register(['@angular/core', '@angular/platform-browser', './app.routes', '
             function (platform_browser_1_1) {
                 platform_browser_1 = platform_browser_1_1;
             },
-            function (app_routes_1_1) {
-                app_routes_1 = app_routes_1_1;
+            function (router_1_1) {
+                router_1 = router_1_1;
             },
-            function (app_component_1_1) {
-                app_component_1 = app_component_1_1;
+            function (shared_module_1_1) {
+                shared_module_1 = shared_module_1_1;
             },
-            function (city_list_module_1_1) {
-                city_list_module_1 = city_list_module_1_1;
-            },
-            function (weather_module_1_1) {
-                weather_module_1 = weather_module_1_1;
+            function (weather_component_1_1) {
+                weather_component_1 = weather_component_1_1;
             }],
         execute: function() {
-            AppModule = (function () {
-                function AppModule() {
+            WeatherModule = (function () {
+                function WeatherModule() {
                 }
-                AppModule = __decorate([
+                WeatherModule = __decorate([
                     core_1.NgModule({
-                        imports: [platform_browser_1.BrowserModule, app_routes_1.routing, city_list_module_1.CityListModule, weather_module_1.WeatherModule],
-                        declarations: [app_component_1.AppComponent],
-                        bootstrap: [app_component_1.AppComponent]
+                        imports: [platform_browser_1.BrowserModule, router_1.RouterModule, shared_module_1.SharedModule],
+                        declarations: [weather_component_1.WeatherComponent],
+                        exports: [weather_component_1.WeatherComponent],
                     }), 
                     __metadata('design:paramtypes', [])
-                ], AppModule);
-                return AppModule;
+                ], WeatherModule);
+                return WeatherModule;
             }());
-            exports_1("AppModule", AppModule);
+            exports_1("WeatherModule", WeatherModule);
         }
     }
 });
-//# sourceMappingURL=app.module.js.map
+//# sourceMappingURL=weather.module.js.map

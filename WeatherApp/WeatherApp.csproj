@@ -75,8 +75,7 @@
     <Content Include="packages.config" />
     <Content Include="package.json" />
     <Content Include="readme.txt" />
-    <Content Include="src\app\feature-cc\feature-cc.html" />
-    <Content Include="src\app\feature-bb\feature-bb.html" />
+    <Content Include="src\app\weather\weather.html" />
     <Content Include="src\index.css" />
     <Content Include="tsconfig.json" />
     <None Include="Web.Debug.config">
@@ -87,7 +86,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="src\app\feature-aa\feature-aa.html" />
+    <Content Include="src\app\city-list\city-list.html" />
     <Content Include="gulpfile.js" />
     <Content Include="src\index.html" />
     <Content Include="systemjs.config.js" />
@@ -100,12 +99,14 @@
     <TypeScriptCompile Include="src\app\app.component.ts" />
     <TypeScriptCompile Include="src\app\app.module.ts" />
     <TypeScriptCompile Include="src\app\app.routes.ts" />
-    <TypeScriptCompile Include="src\app\feature-cc\feature-cc.component.ts" />
-    <TypeScriptCompile Include="src\app\feature-cc\feature-cc.module.ts" />
-    <TypeScriptCompile Include="src\app\feature-bb\feature-bb.component.ts" />
-    <TypeScriptCompile Include="src\app\feature-bb\feature-bb.module.ts" />
-    <TypeScriptCompile Include="src\app\feature-aa\feature-aa.component.ts" />
-    <TypeScriptCompile Include="src\app\feature-aa\feature-aa.module.ts" />
+    <TypeScriptCompile Include="src\app\city-list\city.model.ts" />
+    <TypeScriptCompile Include="src\app\city-list\city.service.ts" />
+    <TypeScriptCompile Include="src\app\weather\weather-service.ts" />
+    <TypeScriptCompile Include="src\app\weather\weather.component.ts" />
+    <TypeScriptCompile Include="src\app\weather\weather-info.model.ts" />
+    <TypeScriptCompile Include="src\app\weather\weather.module.ts" />
+    <TypeScriptCompile Include="src\app\city-list\city-list.component.ts" />
+    <TypeScriptCompile Include="src\app\city-list\city-list.module.ts" />
     <TypeScriptCompile Include="src\app\shared\add-exclamation.pipe.ts" />
     <TypeScriptCompile Include="src\app\shared\shared.module.ts" />
     <TypeScriptCompile Include="src\main.ts" />

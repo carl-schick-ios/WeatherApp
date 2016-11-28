@@ -2,12 +2,12 @@
 import { BrowserModule }    from '@angular/platform-browser';
 import { RouterModule }     from '@angular/router';
 import { SharedModule }       from '../shared/shared.module';
-import { FeatureAaComponent }  from './feature-aa.component';
+import { CityListComponent }  from './city-list.component';
 
 @NgModule({
     imports: [BrowserModule, RouterModule, SharedModule],
-    declarations: [FeatureAaComponent],
-    exports: [FeatureAaComponent],
+    declarations: [CityListComponent],
+    exports: [CityListComponent],
 })
 
-export class FeatureAaModule { }
+export class CityListModule { }

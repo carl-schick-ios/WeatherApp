@@ -23,8 +23,8 @@ System.register(['@angular/core'], function(exports_1, context_1) {
                 }
                 AppComponent = __decorate([
                     core_1.Component({
-                        selector: 'myapp',
-                        template: "<nav class=\"navbar navbar-default navbar-fixed-top top-navbar\">\n                    <div class=\"container app-container\">\n                        <div class=\"navbar-header\">\n                            <div class=\"navbar-brand\">MyApp</div>\n                        </div>\n                        <ul class=\"nav navbar-nav\">\n                          <li><a routerLink=\"/feature-aa\" routerLinkActive=\"active\">Feature Aa</a></li>\n                          <li><a routerLink=\"/feature-bb\" routerLinkActive=\"active\">Feature Bb</a></li>\n                          <li><a routerLink=\"/feature-cc\" routerLinkActive=\"active\">Feature Cc</a></li>\n                        </ul>\n                    </div>\n                </nav>\n\n                <div class=\"container app-container\" >\n                    <router-outlet > </router-outlet>\n                </div>"
+                        selector: 'weather-app',
+                        template: "<nav class=\"navbar navbar-default navbar-fixed-top top-navbar\">\n                    <div class=\"container app-container\">\n                        <div class=\"navbar-header\">\n                            <div class=\"navbar-brand\">WeatherApp</div>\n                        </div>\n                        <ul class=\"nav navbar-nav\">\n                          <li><a routerLink=\"/city-list\" routerLinkActive=\"active\">City List</a></li>\n                          <li><a routerLink=\"/weather\" routerLinkActive=\"active\">Weather</a></li>\n                        </ul>\n                    </div>\n                </nav>\n\n                <div class=\"container app-container\" >\n                    <router-outlet > </router-outlet>\n                </div>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

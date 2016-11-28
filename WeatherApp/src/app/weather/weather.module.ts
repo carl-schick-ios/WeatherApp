@@ -2,12 +2,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { SharedModule }       from '../shared/shared.module';
-import { FeatureBbComponent }  from './feature-bb.component';
+import { WeatherComponent }  from './weather.component';
 
 @NgModule({
     imports: [BrowserModule, RouterModule, SharedModule],
-    declarations: [FeatureBbComponent],
-    exports: [FeatureBbComponent],
+    declarations: [WeatherComponent],
+    exports: [WeatherComponent],
 })
    
-export class FeatureBbModule { }
+export class WeatherModule { }

@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "name": "myapp",
+  "name": "weather-app",
   "private": true,
   "dependencies": {
     "@angular/common": "~2.2.0",
